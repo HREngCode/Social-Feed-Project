@@ -6,20 +6,26 @@ const AddPosts = (props) => {
 
     function handleSubmit(event){
         event.preventDefault();
-        let newEntry = {
+        let newPost = {
             name: name,
             post: post
         };
-        props.addNewPost(newEntry)
+        props.addNewPostProperty(newPost)
     }
     return ( 
-        <table className="table">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                </tr>
-            </thead>
-        </table>
+        <form onSubmit={handleSubmit} >
+        <label>
+          Name
+          <input type='text' value={name} onChange={(event) => setName(event.target.value)} />
+        </label>
+          <div>
+          </div>
+        <label>
+          Post
+          <textarea rows="2" cols="40" type='text' value={post} onChange={(event) => setPost(event.target.value)} ></textarea>
+        </label>
+        <button type='submit' className="btn btn-primary">Create</button>
+      </form>
      );
 }
  
