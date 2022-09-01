@@ -2,7 +2,7 @@ import React from 'react';
 
 const Post = (props) => {
     return ( <div>
-        <h1>{props.post.name}</h1>
+        <li><strong>{props.post.name}</strong></li>
         <p>{props.post.post}</p>
     </div> );
 }

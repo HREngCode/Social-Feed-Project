@@ -21,10 +21,13 @@ function App() {
 
   return (
     <div className='container'>
+      <div>
+        <h3 style={{margin: '1em'}}>Social<small class="text-muted">Feed</small></h3>
+      </div>
       <div className="border-box">
         <AddPosts addNewPostProperty={addNewPosts} />
       </div>
-      <div>
+      <div className="border-box">
         <DisplayPosts parentPosts={posts} />
       </div>
     </div>
