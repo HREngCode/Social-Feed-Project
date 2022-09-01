@@ -1,0 +1,31 @@
+.border-box {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 12px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.col-sm-2 {
+    margin-bottom: 10px;
+    width: 100px;
+    vertical-align: top;
+}
+
+.btn {
+    float: right;
+    padding-top: 10em;
+
+}
+
+.col{
+    vertical-align: top;
+    width: 500px;
+}
+
+.post {
+    margin-right: 12px;
+}
+
+

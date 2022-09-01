@@ -14,17 +14,22 @@ const AddPosts = (props) => {
     }
     return ( 
         <form onSubmit={handleSubmit} >
-        <label>
-          Name
-          <input type='text' value={name} onChange={(event) => setName(event.target.value)} />
-        </label>
-          <div>
+          <div className="form-inline">
+            <label className="col-sm-1 col-form-label">
+              Name
+            </label>
+              <input type='text' className="col" value={name} onChange={(event) => setName(event.target.value)} />
+            <div>
+            </div>
+            <label className="col-sm-1 col-form-label">
+              <div>
+                Post
+              </div>
+            </label>
+            <textarea type='text' class="col" value={post} onChange={(event) => setPost(event.target.value)}></textarea>
+            <button type='submit' className="btn btn-primary">Create</button>
           </div>
-        <label>
-          Post
-          <textarea rows="2" cols="40" type='text' value={post} onChange={(event) => setPost(event.target.value)} ></textarea>
-        </label>
-        <button type='submit' className="btn btn-primary">Create</button>
+
       </form>
      );
 }

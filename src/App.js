@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DisplayPosts from "./components/DisplayPosts/DisplayPosts";
 import AddPosts from "./components/AddPosts/AddPosts";
+import './App.css'
 
 function App() {
   const [posts, setPosts] = useState([
@@ -19,8 +20,8 @@ function App() {
   }
 
   return (
-    <div>
-      <div>
+    <div className='container'>
+      <div className="border-box">
         <AddPosts addNewPostProperty={addNewPosts} />
       </div>
       <div>
