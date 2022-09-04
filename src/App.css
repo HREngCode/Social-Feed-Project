@@ -1,36 +1,68 @@
-.border-box {
+.post-box {
     border: 1px;
+    border-bottom: thick;
     border-style: solid;
-    border-color: black;
+    border-color: black; 
     border-radius: 12px;
-    margin: 1em;
+    width: 60%;
+    margin: auto;
     padding: 1em;
 }
 
-.table {
+.input-name {
+    margin-right: 12px;
+
+}
+
+.input-post {
+    margin: 12px;
+    vertical-align: top;
+}
+
+.input-box {
+    margin: .25em;
+    width: 325px;
+}
+
+.post-list {
+    border: 1px;
+    border-bottom: thick;
+    border-style: solid;
+    border-color: black; 
+    border-radius: 12px;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 185px;
+    padding: 2em;
+}
+
+.display-list {
     list-style: none;
 }
 
-.col-sm-2 {
-    margin-bottom: 10px;
-    width: 100px;
-    vertical-align: top;
+.text-muted {
+    color: gray
 }
 
 .btn {
     float: right;
-    width: 100px;
-    height: 25px;
-    border-radius: 24px;
+    background-color: rgb(0, 89, 255);
+    color: white;
+    border-radius: 4px;
+    margin-top: 2em;
+    padding: 0.25em 1em;
+    cursor: pointer;
+}
+   
+.fa {
+font-size: 40px;
+cursor: pointer;
+user-select: none;
 }
 
-.col{
-    vertical-align: top;
-    width: 500px;
-}
-
-.post {
-    margin-right: 12px;
+.fa:hover {
+color: darkblue;
 }
 
 

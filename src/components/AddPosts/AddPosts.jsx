@@ -1,8 +1,9 @@
 import React, { useState} from "react";
 
+
 const AddPosts = (props) => {
     const [name, setName] = useState('');
-    const [post, setPost] = useState('')
+    const [post, setPost] = useState('');
 
     function handleSubmit(event){
         event.preventDefault();
@@ -14,20 +15,18 @@ const AddPosts = (props) => {
     }
     return ( 
         <form onSubmit={handleSubmit} >
-          <div className="form-inline">
-            <label className="col-sm-1 col-form-label">
+          <div className="post-box">
+            <label className="input-name">
               Name
             </label>
-              <input type='text' className="col" value={name} onChange={(event) => setName(event.target.value)} />
+              <input type='text' className="input-box" value={name} onChange={(event) => setName(event.target.value)} />
             <div>
             </div>
-            <label className="col-sm-1 col-form-label">
-              <div>
+            <label className="input-post">
                 Post
-              </div>
             </label>
-            <textarea type='text' class="col" value={post} onChange={(event) => setPost(event.target.value)}></textarea>
-            <button type='submit' className="btn btn-primary" style={{'margin-top':'2em'}}>Create</button>
+            <textarea type='text' className="input-box" value={post} onChange={(event) => setPost(event.target.value)}></textarea>
+            <button type='submit' className="btn btn-primary">Create</button>
           </div>
       </form>
      );

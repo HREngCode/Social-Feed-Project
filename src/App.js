@@ -12,6 +12,7 @@ function App() {
     },
 
   ]);
+  
 
   function addNewPosts(post) {
     let tempPosts = [...posts, post];
@@ -22,13 +23,15 @@ function App() {
   return (
     <div className='container'>
       <div>
-        <h3 style={{margin: '1em'}}>Social<small class="text-muted">Feed</small></h3>
+        <h3 style={{'margin':'.5em'}}>Social<span className="text-muted">Feed</span></h3>
       </div>
-      <div className="border-box">
-        <AddPosts addNewPostProperty={addNewPosts} />
-      </div>
-      <div className="border-box">
-        <DisplayPosts parentPosts={posts} />
+      <div className="center">
+        <div className="border-box">
+          <AddPosts addNewPostProperty={addNewPosts} />
+        </div>
+        <div className="border-box">
+          <DisplayPosts parentPosts={posts} />
+        </div>
       </div>
     </div>
   );
