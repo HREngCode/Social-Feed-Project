@@ -1,0 +1,18 @@
+.fa {
+    float: right;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+    }
+    
+.fa:hover {
+    color: darkblue;
+    }
+
+/* .active{
+    background-color: teal;
+}
+
+.inactive{
+    background-color: grey;
+} */

@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import LikeButton from '../LikeButton/LikeButton';
 
 const Post = (props) => {
-  const [isActive,setActive] = useState(true);
+
     return ( <div className='post-list'>
         <li><strong>{props.post.name}</strong></li>
         <p>{props.post.post}</p>
-        <i className={`container ${isActive?"fa fa-thumbs-up":"fa fa-thumbs-down"}`} onClick={()=>setActive(!isActive)}></i>
+        <LikeButton/>
     </div> );
 }
 export default Post;

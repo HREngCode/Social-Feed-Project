@@ -26,7 +26,7 @@ const AddPosts = (props) => {
                 Post
             </label>
             <textarea type='text' className="input-box" value={post} onChange={(event) => setPost(event.target.value)}></textarea>
-            <button type='submit' className="btn btn-primary">Create</button>
+            <btn type='submit' className="btn btn-primary">Create</btn>
           </div>
       </form>
      );
